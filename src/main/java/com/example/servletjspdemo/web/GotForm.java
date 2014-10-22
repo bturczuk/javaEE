@@ -32,8 +32,7 @@ public class GotForm extends HttpServlet {
 		+request.getParameter("imie")
 		+"<br/> Wiek: "
 		+request.getParameter("wiek")
-		+"<br/> Hobby: "
-		+request.getParameter("hobby")
+		+"<br/> Hobby: " + selectedHobby "<br />"
 		+"<br/> Wojewodztwo: "
 		+request.getParameter("wojewodztwo")
 		+"<br/> Zainteresowania: "
