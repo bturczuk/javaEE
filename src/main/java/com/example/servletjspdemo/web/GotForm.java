@@ -23,6 +23,11 @@ public class GotForm extends HttpServlet {
 		
 		PrintWriter writer = response.getWriter();
 		
+		String selectedHobby = "";
+		for (String hobby : request.getParameterValues("hobby")) {
+			selectedHobby += hobby + " ";
+		}
+		
 		String body="<html><body> Twoje imie to: " 
 		+request.getParameter("imie")
 		+"<br/> Wiek: "
